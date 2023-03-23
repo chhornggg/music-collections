@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo h1 {
+  font-family: "Karla", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.add-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 450px;
+  background-color: transparent;
+  padding: 30px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.wrapper .input-title {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .input-title input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid #0a2647;
+}
+
+.wrapper .input-title input[type="text"],
+textarea {
+  background-color: transparent;
+}
+
+.wrapper .input-title input:focus {
+  outline: none;
+}
+
+.input-title input:focus ~ label,
+.input-title input:valid ~ label {
+  transform: translateY(-30px);
+  color: #0a2647;
+}
+
+.wrapper .input-title label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #0a2647;
+  pointer-events: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.wrapper .input-title .underline {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+}
+
+.input-title .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #0a2647;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-title input:focus ~ .underline:before,
+.input-title input:valid ~ .underline:before {
+  transform: scaleX(1);
+}
+
+#add-btn {
+  margin: 20px 0 0 28px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 88%;
+  padding: 10px;
+  color: #fc00ff;
+  border-radius: 8px;
+  border: none;
+  background: #0a2647;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+#add-btn:hover {
+  filter: brightness(80%);
+}
+
+/* MusicTable */
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #0a2647;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table th {
+  font-family: "Karla", sans-serif;
+}
+
+.content-table td {
+  font-family: "Poppins", sans-serif;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: white;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #dddddd;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #0a2647;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #0a2647;
+}
+
+.delete-icon {
+  font-size: 18px;
+}
+
+.delete-icon i {
+  cursor: pointer;
+  color: #0a2647;
+}
+
+.delete-btn {
+  border: none;
+}
