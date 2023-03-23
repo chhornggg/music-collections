@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/music-collections/static/js/main.9ec768fb.js",
+    "static/media/music-logo.png": "/music-collections/static/media/music-logo.21c28b9767803b8926c5.png",
+    "index.html": "/music-collections/index.html",
+    "main.9ec768fb.js.map": "/music-collections/static/js/main.9ec768fb.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9ec768fb.js"
+  ]
+}
